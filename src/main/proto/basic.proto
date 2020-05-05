@@ -1,0 +1,27 @@
+syntax="proto3";
+
+message Person {
+  int32 id = 1;
+  string firstName = 2;
+  string lastName = 3;
+  bool isValidate = 4;
+  double height = 5;
+  repeated string phoneNumber = 6;  /*repeated is used for list*/
+
+  enum Supplier{
+    INDIGO = 0;
+    SPICEJET = 2;
+    GALILEO = 3;
+  }
+
+  Supplier supp = 7;
+  Date date = 8;
+
+
+}
+
+message Date {
+  int32 year = 1;
+  int32 month = 2;
+  int32 date = 3;
+}

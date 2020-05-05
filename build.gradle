@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id "com.google.protobuf" version "0.8.12"
+    id 'idea'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.google.protobuf:protobuf-java:3.11.4'
+    compile 'com.google.protobuf:protobuf-java-util:3.11.4'
+    /*compile group: 'com.google.protobuf', name: 'protoc', version: '3.11.4', ext: 'pom'
+    runtime group: 'com.google.protobuf', name: 'protobuf-gradle-plugin', version: '0.8.12'*/
+}
